@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Bakery Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CheRrys Aisle</title>
 </head>
+
 <body>
-  <p>This is my first bakery Site</p>
+    <header>
+        <h1>CheRrys Aisle</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to CheRrys Aisle!</h2>
+            <p>Your one-stop shop for delicious homemade yoghurts, parfait, pastries, and breads. We pride ourselves on using only the finest ingredients to create mouthwatering treats.</p>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <h3>Chocolate Cake</h3>
+                <p>A rich, decadent chocolate cake with a smooth chocolate frosting.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Blueberry Muffins</h3>
+                <p>Fluffy muffins packed with fresh blueberries and a hint of vanilla.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Croissants</h3>
+                <p>Golden, buttery croissants that melt in your mouth.</p>
+            </div>
+            <div class="menu-item">
+              <h3>parfait</h3>
+              <p>Yummy parfait with variety of fruits match</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At CheRrys Aisle, we delight in serving our customers with tastiest snacks and most delicious meals in town. Our recipes are inspired from the love of the art, and our mission is to bring smiles to your face with every taste!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CheRrys Aisle. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
